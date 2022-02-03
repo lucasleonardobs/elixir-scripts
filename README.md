@@ -1,21 +1,29 @@
-# SumList
+# Elixir Scripts
 
-**TODO: Add description**
+**How to use?**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `sum_list` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:sum_list, "~> 0.1.0"}
-  ]
-end
+Run the command to open "interative" elixir terminal
+```
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/sum_list>.
+## SumList
+*What is?*
+SumList is a algorithm to sum all elements in a list, example:
+
+```
+iex(1)> SumList.call([1, 2, 3])
+6
+```
+
+To run SumList, execute SumList.call([1, 2, 3])
+
+## MapList
+*What is?*
+MapList is a map algorithm thats receive a list and a function and run the function in all list items, example:
+
+```
+iex(1)> MapList.map([1, 2, 3], fn x -> x + 1 end)
+[2, 3, 4]
+```
 
