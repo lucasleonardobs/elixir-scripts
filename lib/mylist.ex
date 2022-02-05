@@ -16,11 +16,11 @@ defmodule MyList do
 
   def filter([], _func), do: []
 
-  def filter([hd | tl], func) do
-    if func.(hd) do
-      [hd] ++ filter(tl, func)
+  def filter([head | tail], func) do
+    if func.(head) do
+      [head] ++ filter(tail, func)
     else
-      filter(tl, func)
+      filter(tail, func)
     end
   end
 end
